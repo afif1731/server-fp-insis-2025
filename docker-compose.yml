@@ -1,0 +1,35 @@
+services:
+  database:
+    container_name: insis-fp-db
+    image: postgres:latest
+    restart: on-failure
+    env_file:
+      - .env
+    environment:
+      POSTGRES_DB: ${DATABASE_NAME}
+      POSTGRES_USER: ${DATABASE_USER}
+      POSTGRES_PASSWORD: ${DATABASE_PASS}
+    ports:
+      - ${DATABASE_PORT}:5432
+    expose:
+      - ${DATABASE_PORT}
+    volumes:
+      - ./docker/db_volume/:/var/lib/postgresql/data
+  
+  mqtt5:
+    container_name: mqtt5
+    image: eclipse-mosquitto
+    restart: on-failure
+    env_file:
+      - .env
+    ports:
+      - ${MQTT_PORT}:1883
+    expose:
+      - ${MQTT_PORT}
+    volumes:
+      - ./mosquitto_config:/mosquitto/config:rw
+      - ./docker/mosquitto/data:/mosquitto/data:rw
+      - ./docker/mosquitto/log:/mosquitto/log:rw
+
+volumes:
+  mysqldata:

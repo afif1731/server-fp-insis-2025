@@ -1,0 +1,99 @@
+generator client {
+    provider = "prisma-client-py"
+}
+
+datasource db {
+    provider = "postgresql"
+    url = env("DATABASE_URL")
+}
+
+enum AccountRole {
+    USER
+    ADMIN
+}
+
+enum TransactionType {
+    PURCHASE
+    TRANSFER
+    AUCTION
+}
+
+model Accounts {
+    id          String          @id @default(uuid())
+    name        String
+    role        AccountRole     @default(USER)
+    email       String          @unique
+    password    String
+    created_at  DateTime        @default(now())
+    updated_at  DateTime        @default(now()) @updatedAt
+
+    user_wallet UserWallets[]
+}
+
+model PaymentMethods {
+    id              String          @id @default(uuid())
+    payment_name    String          
+    payment_slug    String          @unique
+    created_at      DateTime        @default(now())
+    updated_at      DateTime        @default(now()) @updatedAt
+
+    user_wallet     UserWallets[]
+}
+
+model UserWallets {
+    id                          String          @id @default(uuid())
+    wallet_name                 String
+    balance                     Int             @default(100000)
+
+    account_id                  String
+    account                     Accounts        @relation(fields: [account_id], references: [id])
+    payment_method_slug         String
+    payment_method              PaymentMethods  @relation(fields: [payment_method_slug], references: [payment_slug])
+
+    created_at                  DateTime        @default(now())
+    updated_at                  DateTime        @default(now()) @updatedAt
+
+    shop_transaction            ShopTransactions[]
+    wallet_transaction          WalletTransactions[]
+
+    @@unique([account_id, payment_method_slug], name: "account_wallet")
+}
+
+model WalletTransactions {
+    id                  String          @id @default(uuid())
+    transaction_type    TransactionType
+    description         String
+    balance_change      Int
+
+    user_wallet_id      String
+    user_wallet         UserWallets     @relation(fields: [user_wallet_id], references: [id])
+
+    created_at          DateTime        @default(now())
+    updated_at          DateTime        @default(now()) @updatedAt
+}
+
+model ShopProducts {
+    id                  String      @id @default(uuid())
+    name                String
+    image_url           String
+    price               Int
+    quantity            Int
+    created_at          DateTime    @default(now())
+    updated_at          DateTime    @default(now()) @updatedAt
+
+    shop_transaction    ShopTransactions[]
+}
+
+model ShopTransactions {
+    id              String          @id @default(uuid())
+    item_quantity   Int
+    total_price     Int
+
+    user_wallet_id  String
+    user_wallet     UserWallets     @relation(fields: [user_wallet_id], references: [id])
+    product_id      String
+    product         ShopProducts    @relation(fields: [product_id], references: [id])
+
+    created_at      DateTime        @default(now())
+    updated_at      DateTime        @default(now()) @updatedAt
+}

@@ -1,0 +1,100 @@
+id,wallet_name,account_id,payment_method_slug,balance
+2849c3df-8d7d-4913-8893-4e4b7063c0c5,Kelompok_A_Kelas_A Do Pay,b41f26bb-88d6-466e-9f31-37fd247ee07b,dopay,100000
+e14b7e46-5ddc-40a9-bdb9-d085eebff21c,Kelompok_A_Kelas_A OWO,b41f26bb-88d6-466e-9f31-37fd247ee07b,owo,100000
+b06c8f94-816f-4047-9c4f-8dea9acc8ab8,Kelompok_A_Kelas_A RiNG Aja,b41f26bb-88d6-466e-9f31-37fd247ee07b,ringaja,100000
+c611f64f-636f-424b-b9c4-cf32ee4ac417,Kelompok_B_Kelas_A Do Pay,0f29ed5c-7238-4b5c-8539-d0f508affbca,dopay,100000
+85eb55f3-6a1f-47a2-987e-d43fb0c26057,Kelompok_B_Kelas_A OWO,0f29ed5c-7238-4b5c-8539-d0f508affbca,owo,100000
+04fb797c-9f82-42ed-82ef-b25fe5a75e88,Kelompok_B_Kelas_A RiNG Aja,0f29ed5c-7238-4b5c-8539-d0f508affbca,ringaja,100000
+092e2f5a-1eaa-46df-9505-51922bd5ea6c,Kelompok_C_Kelas_A Do Pay,0bf06157-d7e2-4493-aa60-2b475c03dcf6,dopay,100000
+2e21ad0f-caf0-4142-bdac-03823d068f67,Kelompok_C_Kelas_A OWO,0bf06157-d7e2-4493-aa60-2b475c03dcf6,owo,100000
+f5933546-9445-4189-9cd0-4522702820de,Kelompok_C_Kelas_A RiNG Aja,0bf06157-d7e2-4493-aa60-2b475c03dcf6,ringaja,100000
+f8062c71-d35c-442c-a416-6eb92fcdd3f8,Kelompok_D_Kelas_A Do Pay,8a289210-574e-4348-a1d0-5a35dc21bffd,dopay,100000
+144df216-a828-4beb-bae9-855cf4c5b4b9,Kelompok_D_Kelas_A OWO,8a289210-574e-4348-a1d0-5a35dc21bffd,owo,100000
+33c9bde1-d340-40c0-ab8d-4c0b762a2c81,Kelompok_D_Kelas_A RiNG Aja,8a289210-574e-4348-a1d0-5a35dc21bffd,ringaja,100000
+c5d781f4-6426-47c5-86b1-33158b52eb05,Kelompok_E_Kelas_A Do Pay,08fcc4b5-e5b5-4c06-8acc-458b4f85f423,dopay,100000
+94165c9f-0a42-433c-abf1-abab0f28e481,Kelompok_E_Kelas_A OWO,08fcc4b5-e5b5-4c06-8acc-458b4f85f423,owo,100000
+12143251-f218-4486-84c3-cd57f2a67d0a,Kelompok_E_Kelas_A RiNG Aja,08fcc4b5-e5b5-4c06-8acc-458b4f85f423,ringaja,100000
+ba72cf36-d84c-440b-8c3f-823fc84b9f16,Kelompok_F_Kelas_A Do Pay,99177762-0f24-4491-9e97-490961376f01,dopay,100000
+fd5e0e21-ee74-4dd1-bcce-95dfaf8b2b6d,Kelompok_F_Kelas_A OWO,99177762-0f24-4491-9e97-490961376f01,owo,100000
+2a88d3e3-a511-4c8e-8ad3-4bda70fabb37,Kelompok_F_Kelas_A RiNG Aja,99177762-0f24-4491-9e97-490961376f01,ringaja,100000
+0010e1bf-98b7-47ca-8a5a-fd4274014c6f,Kelompok_G_Kelas_A Do Pay,3701f642-1187-48c6-849a-3512da846590,dopay,100000
+fdad269f-8080-46ed-b22b-d7edcc10a855,Kelompok_G_Kelas_A OWO,3701f642-1187-48c6-849a-3512da846590,owo,100000
+d60a1878-8c1e-4326-89a8-bce6ac942fe8,Kelompok_G_Kelas_A RiNG Aja,3701f642-1187-48c6-849a-3512da846590,ringaja,100000
+d62ffe90-a802-438e-ba35-014b33cc4796,Kelompok_H_Kelas_A Do Pay,1a154dd7-95ae-4486-a2f7-de11aee42937,dopay,100000
+44010f72-2150-4a8b-9a6b-e3d1a9ace82c,Kelompok_H_Kelas_A OWO,1a154dd7-95ae-4486-a2f7-de11aee42937,owo,100000
+2058fd5d-6974-498b-85d8-2f8cd85a665c,Kelompok_H_Kelas_A RiNG Aja,1a154dd7-95ae-4486-a2f7-de11aee42937,ringaja,100000
+61bf64d0-da31-4d75-a6b2-238274d34075,Kelompok_I_Kelas_A Do Pay,a6c7fecd-c098-4356-94d5-a631fe4760d5,dopay,100000
+86ea74f2-0d4d-4a5e-b588-100b89f71949,Kelompok_I_Kelas_A OWO,a6c7fecd-c098-4356-94d5-a631fe4760d5,owo,100000
+672bff1c-ffb8-4bc7-b9b2-c33bd3d9b260,Kelompok_I_Kelas_A RiNG Aja,a6c7fecd-c098-4356-94d5-a631fe4760d5,ringaja,100000
+9fe74d98-27b0-4903-a2cf-da00a210c9b5,Kelompok_J_Kelas_A Do Pay,52fa2991-0fa9-4b82-82ff-e81a46865454,dopay,100000
+e60d1ba4-c074-4011-8b3d-2e6e6ac44230,Kelompok_J_Kelas_A OWO,52fa2991-0fa9-4b82-82ff-e81a46865454,owo,100000
+0a5a6b1f-d4f8-4a2d-9c73-76350c479c5f,Kelompok_J_Kelas_A RiNG Aja,52fa2991-0fa9-4b82-82ff-e81a46865454,ringaja,100000
+a7120cd8-8bc1-4bd9-a7b8-36c5d9230050,Kelompok_K_Kelas_A Do Pay,28795500-c0c5-4232-8c88-429bb31d399b,dopay,100000
+b790e1a5-44d1-493e-90c9-f3871e827efb,Kelompok_K_Kelas_A OWO,28795500-c0c5-4232-8c88-429bb31d399b,owo,100000
+e41945be-015f-457e-bdde-f6a8cc936d0b,Kelompok_K_Kelas_A RiNG Aja,28795500-c0c5-4232-8c88-429bb31d399b,ringaja,100000
+655692ed-8f30-41d8-a5f2-cceb58564045,Kelompok_L_Kelas_A Do Pay,f0b9976b-b839-4ca5-ae73-eea62da2e1db,dopay,100000
+151b68e3-d2a4-49a8-b560-fc436a6dfa70,Kelompok_L_Kelas_A OWO,f0b9976b-b839-4ca5-ae73-eea62da2e1db,owo,100000
+c595e5ee-768c-42ef-8cbf-3f4f475d1bdf,Kelompok_L_Kelas_A RiNG Aja,f0b9976b-b839-4ca5-ae73-eea62da2e1db,ringaja,100000
+f9041b45-3c0a-472d-bf6c-cd80fec26416,Kelompok_M_Kelas_A Do Pay,eb4550a8-778d-4b94-b33f-89889666aefe,dopay,100000
+37c6fa26-a389-4723-84b1-ee769776c9cb,Kelompok_M_Kelas_A OWO,eb4550a8-778d-4b94-b33f-89889666aefe,owo,100000
+a6587f83-2b63-44a3-a786-0bbd3b31babe,Kelompok_M_Kelas_A RiNG Aja,eb4550a8-778d-4b94-b33f-89889666aefe,ringaja,100000
+2dc6899f-bbe2-48eb-8f4d-8f372b11c3dc,Kelompok_N_Kelas_A Do Pay,84f75090-11fa-4698-90ab-2dd4135ede65,dopay,100000
+dba1b703-8bee-4324-aa26-56802b1338d6,Kelompok_N_Kelas_A OWO,84f75090-11fa-4698-90ab-2dd4135ede65,owo,100000
+cddf4ff9-0693-4721-9b70-cf3f27c816c8,Kelompok_N_Kelas_A RiNG Aja,84f75090-11fa-4698-90ab-2dd4135ede65,ringaja,100000
+4f614841-fd06-4519-9887-2feaef95bd0a,Kelompok_O_Kelas_A Do Pay,ed886820-7af9-4ca1-8e39-1687d004d0ec,dopay,100000
+69fafad0-3d5d-46f3-b68e-198f3e788cf4,Kelompok_O_Kelas_A OWO,ed886820-7af9-4ca1-8e39-1687d004d0ec,owo,100000
+cd5d228a-0930-4913-8e36-c08a904489d8,Kelompok_O_Kelas_A RiNG Aja,ed886820-7af9-4ca1-8e39-1687d004d0ec,ringaja,100000
+ccb3106d-3908-42ff-b164-d4d12c259720,Kelompok_A_Kelas_B Do Pay,ea54b623-7dc6-4c48-b1e3-aaaa222b9a3a,dopay,100000
+b8e32a30-824d-4325-9c63-388e2d460b12,Kelompok_A_Kelas_B OWO,ea54b623-7dc6-4c48-b1e3-aaaa222b9a3a,owo,100000
+4fc75c7c-4d12-40c6-9585-a5148bb57bbf,Kelompok_A_Kelas_B RiNG Aja,ea54b623-7dc6-4c48-b1e3-aaaa222b9a3a,ringaja,100000
+498dc7c2-0fbd-46bf-b3c3-533e702f9180,Kelompok_B_Kelas_B Do Pay,8de0c97d-15b9-4ba1-abbd-90f120ad3b02,dopay,100000
+b76ca3d0-cd71-4948-a54f-616f912401dd,Kelompok_B_Kelas_B OWO,8de0c97d-15b9-4ba1-abbd-90f120ad3b02,owo,100000
+d6ab175f-8526-42b2-a70c-19779d2326a6,Kelompok_B_Kelas_B RiNG Aja,8de0c97d-15b9-4ba1-abbd-90f120ad3b02,ringaja,100000
+32d67e12-5941-41dc-9cb2-79fda099620d,Kelompok_C_Kelas_B Do Pay,a8af9243-7cee-49f5-8598-5aa6fdf7520f,dopay,100000
+27416590-47a0-48fb-bbd3-43a1c87219f3,Kelompok_C_Kelas_B OWO,a8af9243-7cee-49f5-8598-5aa6fdf7520f,owo,100000
+ae9fddbe-e9a9-494a-9ee1-476d963b3ee7,Kelompok_C_Kelas_B RiNG Aja,a8af9243-7cee-49f5-8598-5aa6fdf7520f,ringaja,100000
+46a1613a-94d4-48c2-9764-e0abd7fae719,Kelompok_D_Kelas_B Do Pay,466ff95f-ca92-43ed-abcb-4128d77239ba,dopay,100000
+5b605c77-21c4-4b03-9196-77dd5dd9a52d,Kelompok_D_Kelas_B OWO,466ff95f-ca92-43ed-abcb-4128d77239ba,owo,100000
+60f74e21-bb43-483a-8a80-9a7faf3def5d,Kelompok_D_Kelas_B RiNG Aja,466ff95f-ca92-43ed-abcb-4128d77239ba,ringaja,100000
+99b072b1-580f-4634-84b3-efcc5d1be469,Kelompok_E_Kelas_B Do Pay,28f445f4-53c1-48f6-8e5a-bf6c19032a2a,dopay,100000
+3248449d-078c-49ed-8982-36cdc71da0ef,Kelompok_E_Kelas_B OWO,28f445f4-53c1-48f6-8e5a-bf6c19032a2a,owo,100000
+8330a1a2-5ef7-4518-8740-1ce996dc39ea,Kelompok_E_Kelas_B RiNG Aja,28f445f4-53c1-48f6-8e5a-bf6c19032a2a,ringaja,100000
+03132cab-27b4-4a79-a51a-6215e7cdc2f9,Kelompok_F_Kelas_B Do Pay,f821c673-a4b6-46e9-b097-8358bf7451bd,dopay,100000
+be06cb68-2935-4231-a163-a1c4cf0e49fe,Kelompok_F_Kelas_B OWO,f821c673-a4b6-46e9-b097-8358bf7451bd,owo,100000
+2b791f57-3bbc-4c22-a3ab-c0ab4e0fa7d3,Kelompok_F_Kelas_B RiNG Aja,f821c673-a4b6-46e9-b097-8358bf7451bd,ringaja,100000
+e364006e-4334-4fa0-b78d-52c7b78fbcbb,Kelompok_G_Kelas_B Do Pay,85993a0a-84ac-48fe-9b46-d2de13ab1c0e,dopay,100000
+986f3d6c-84e2-4164-a708-1cfefabe62d2,Kelompok_G_Kelas_B OWO,85993a0a-84ac-48fe-9b46-d2de13ab1c0e,owo,100000
+c146b57d-aecb-4d5a-807d-433ad6457fc1,Kelompok_G_Kelas_B RiNG Aja,85993a0a-84ac-48fe-9b46-d2de13ab1c0e,ringaja,100000
+07802b0f-1ab6-4288-aa9a-c8c9e546f81b,Kelompok_H_Kelas_B Do Pay,3c8e454a-4901-42d6-bd0e-e8a77ab31aa3,dopay,100000
+aa1f3816-aaf7-442b-85f4-89091446a085,Kelompok_H_Kelas_B OWO,3c8e454a-4901-42d6-bd0e-e8a77ab31aa3,owo,100000
+b6195912-0870-47ba-840a-9bc7a7015467,Kelompok_H_Kelas_B RiNG Aja,3c8e454a-4901-42d6-bd0e-e8a77ab31aa3,ringaja,100000
+9499b3fe-6a35-4e26-bb4e-4d81d8753890,Kelompok_I_Kelas_B Do Pay,7f4128a0-7967-4017-90c5-45a38c6542b8,dopay,100000
+258df43d-7331-4083-90ac-5609f2a02533,Kelompok_I_Kelas_B OWO,7f4128a0-7967-4017-90c5-45a38c6542b8,owo,100000
+8708aee9-69f0-4f62-8558-4986fcf53f0d,Kelompok_I_Kelas_B RiNG Aja,7f4128a0-7967-4017-90c5-45a38c6542b8,ringaja,100000
+c1a0a037-551b-471d-bbc3-34922386af98,Kelompok_J_Kelas_B Do Pay,cd148442-a675-4ff2-b259-10dc5b2929a7,dopay,100000
+a12ce5d4-b684-47f8-a57c-ca925b606183,Kelompok_J_Kelas_B OWO,cd148442-a675-4ff2-b259-10dc5b2929a7,owo,100000
+6fb94ca1-f695-491c-b5ff-f1d5c980fd85,Kelompok_J_Kelas_B RiNG Aja,cd148442-a675-4ff2-b259-10dc5b2929a7,ringaja,100000
+47cf6ea1-24c3-4d03-9e91-f38cc833a0e8,Kelompok_K_Kelas_B Do Pay,7a89e90d-a1f6-4f4d-bd09-1c9492cc882a,dopay,100000
+8c469690-cd2c-4103-8117-12dbe02cee62,Kelompok_K_Kelas_B OWO,7a89e90d-a1f6-4f4d-bd09-1c9492cc882a,owo,100000
+5e0d30ca-80e2-486e-b907-cfdde151147a,Kelompok_K_Kelas_B RiNG Aja,7a89e90d-a1f6-4f4d-bd09-1c9492cc882a,ringaja,100000
+f756c748-e1db-40d9-8b94-7be8da0b93ed,Kelompok_L_Kelas_B Do Pay,f74334f6-8e14-4029-a60f-bd0bdb86c039,dopay,100000
+e693a51a-02a0-41e3-ab20-120378f6ac6e,Kelompok_L_Kelas_B OWO,f74334f6-8e14-4029-a60f-bd0bdb86c039,owo,100000
+b2a08c33-8952-4d0a-9ce0-3688c322e6cd,Kelompok_L_Kelas_B RiNG Aja,f74334f6-8e14-4029-a60f-bd0bdb86c039,ringaja,100000
+b94c4d99-cbb2-45bf-96cd-4636af6a6b29,Kelompok_M_Kelas_B Do Pay,591a9930-1a12-42ad-a113-393216fa85d1,dopay,100000
+dec9f784-c272-4b68-826e-714fa978836e,Kelompok_M_Kelas_B OWO,591a9930-1a12-42ad-a113-393216fa85d1,owo,100000
+e42f24c4-1b87-4960-b275-cde950ba9ccf,Kelompok_M_Kelas_B RiNG Aja,591a9930-1a12-42ad-a113-393216fa85d1,ringaja,100000
+47e69481-1c4b-406d-935b-7ad54a48412d,Kelompok_N_Kelas_B Do Pay,103c10e5-3722-4db8-bce8-d0b7c70d1537,dopay,100000
+177adca5-3109-46d9-b78c-7942b5424449,Kelompok_N_Kelas_B OWO,103c10e5-3722-4db8-bce8-d0b7c70d1537,owo,100000
+618f7ac3-5021-4a9d-8bbf-af6147995a66,Kelompok_N_Kelas_B RiNG Aja,103c10e5-3722-4db8-bce8-d0b7c70d1537,ringaja,100000
+ab605218-0765-4b2d-8f86-b1766a3b39f1,Kelompok_O_Kelas_B Do Pay,fd915eb6-843b-4323-bb65-82ce8448017d,dopay,100000
+e7bb2a25-322a-47ce-bcda-eefdbac4338a,Kelompok_O_Kelas_B OWO,fd915eb6-843b-4323-bb65-82ce8448017d,owo,100000
+343d358c-144e-41c8-a7eb-b2e2388f22b3,Kelompok_O_Kelas_B RiNG Aja,fd915eb6-843b-4323-bb65-82ce8448017d,ringaja,100000
+88833d7b-b799-4209-b965-52fe0e643bd9,Kelompok_P_Kelas_B Do Pay,69e1ba53-2f07-43b8-a9ca-10abc78a3c16,dopay,100000
+2160ef62-3b0c-4312-bc01-2ef70ad570e5,Kelompok_P_Kelas_B OWO,69e1ba53-2f07-43b8-a9ca-10abc78a3c16,owo,100000
+132d323a-e9cd-4186-be89-b94a58dc068c,Kelompok_P_Kelas_B RiNG Aja,69e1ba53-2f07-43b8-a9ca-10abc78a3c16,ringaja,100000
+4b79a851-f886-43cf-8e29-cbd91c31e73d,Kelompok_Q_Kelas_B Do Pay,035ef6dc-2a7e-4195-894b-362040d986db,dopay,100000
+392cce78-e26e-4d20-8685-6559c1605549,Kelompok_Q_Kelas_B OWO,035ef6dc-2a7e-4195-894b-362040d986db,owo,100000
+a2777c24-7802-40bc-9c80-5d54ac18131a,Kelompok_Q_Kelas_B RiNG Aja,035ef6dc-2a7e-4195-894b-362040d986db,ringaja,100000
+f74e96d7-3b39-47e2-9aba-ce38074cdd04,Kelompok_R_Kelas_B Do Pay,37367fec-6f08-45e2-b4bc-85b37584eeb1,dopay,100000
+f98dc765-7f70-46b9-806a-9a230981d41f,Kelompok_R_Kelas_B OWO,37367fec-6f08-45e2-b4bc-85b37584eeb1,owo,100000
+cafe3ea6-4e25-4a97-951a-4975be102cb6,Kelompok_R_Kelas_B RiNG Aja,37367fec-6f08-45e2-b4bc-85b37584eeb1,ringaja,100000
