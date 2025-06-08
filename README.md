@@ -1,20 +1,15 @@
 # BankIT
 
-## How To Run BankIT Server
+## Prerequisites
 
-### Create Python Environment (Recommended for Development)
-```
-py -3.9 -m venv .venv
-```
+- uv
+- npm
 
-### Activate Virtual environment (Windows)
-```
-.venv/Scripts/activate
-```
+### Installation
 
-### Install Requirements
-```
-pip install -r requirements.txt
+```bash
+uv sync
+npm install prisma -g
 ```
 
 ### Run Docker for Database
