@@ -105,6 +105,32 @@ async def shop_product():
       )
   print('✅ Success!')
 
+async def wallet_transactions():
+  print('💰 Wallet Transactions Seeder')
+  with open('./prisma/seeder_data/wallet_transactions.csv', mode='r') as infile:
+    reader = csv.DictReader(infile)
+    mydict = [row for row in reader]
+    for transaction in mydict:
+      await prisma.wallettransactions.upsert(
+        where={'id': transaction['id']},
+        data={
+            'create': {
+            'id': transaction['id'],
+            'transaction_type': transaction['transaction_type'],
+            'description': transaction['description'],
+            'balance_change': int(transaction['balance_change']),
+            'user_wallet_id': transaction['user_wallet_id'],
+          },
+          'update': {
+            'transaction_type': transaction['transaction_type'],
+            'description': transaction['description'],
+            'balance_change': int(transaction['balance_change']),
+            'user_wallet_id': transaction['user_wallet_id'],
+          }
+        }
+      )
+  print('✅ Success!')
+
 async def main():
     await prisma.connect()
     print('🕐 Starting the Seeder...')
@@ -112,6 +138,7 @@ async def main():
     await payment_method()
     await user_wallet()
     await shop_product()
+    await wallet_transactions()
     print('💫 All Done!')
     await prisma.disconnect()
 
