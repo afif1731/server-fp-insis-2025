@@ -19,7 +19,7 @@ docker compose up -d
 
 ### Migrate Database
 ```
-prisma migrate dev --schema ./prisma/schema.prisma
+uv run python -m prisma migrate dev --schema ./prisma/schema.prisma
 ```
 
 ### Use Data Seeder
