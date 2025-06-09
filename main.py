@@ -27,12 +27,15 @@ TOPIC_HANDLERS = {
     'bankit/account-identity/request': async_callback_wrapper(getAccountController.getAccountController),
     'bankit/wallet-identity/request': async_callback_wrapper(getAccountController.getWalletController),
     'shopit/product-catalog/request': async_callback_wrapper(productController.getProductCatalogController),
+    'shopit/product-detail/request': async_callback_wrapper(productController.getProductByIdController),
 }
 
 def onConnectHandler(client: mqtt.Client, userdata, flags, rc):
     client.subscribe('+/+/bankit/account-identity/request')
     client.subscribe('+/+/bankit/wallet-identity/request')
     client.subscribe('+/+/shopit/product-catalog/request')
+    client.subscribe('+/+/shopit/product-detail/request')
+    
 
 def onMessageHandler(client: mqtt.Client, userdata, message: mqtt.MQTTMessage):
     topic_parts = message.topic.split('/')

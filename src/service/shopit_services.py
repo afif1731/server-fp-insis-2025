@@ -26,3 +26,19 @@ async def getProductCatalogService():
     product_list.sort(key=lambda x: x['name'])
     
     return product_list
+
+async def getProductByIdService(product_id: str):
+    product = await prisma.shopproducts.find_first(
+        where={'id': product_id}
+    )
+    
+    if product is None:
+        raise CustomError(404, 'produk tidak ditemukan')
+    
+    return {
+        'id': product.id,
+        'name': product.name,
+        'image_url': product.image_url,
+        'price': product.price,
+        'quantity': product.quantity
+    }
