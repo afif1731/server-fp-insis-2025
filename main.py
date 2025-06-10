@@ -4,6 +4,7 @@ import asyncio
 import src.controller.get_account_controller as getAccountController
 from src.config.mqtt_config import connect_mqtt, MQTT_URL
 from src.config.prisma_config import prisma
+from src.controller.transfer_controller import handle_transfer_balance
 
 LOOP = None  # Global event loop
 stop_event = asyncio.Event()
@@ -25,11 +26,13 @@ def async_callback_wrapper(coro_func):
 TOPIC_HANDLERS = {
     'bankit/account-identity/request': async_callback_wrapper(getAccountController.getAccountController),
     'bankit/wallet-identity/request': async_callback_wrapper(getAccountController.getWalletController),
+    'bankit/balance-transfer/request': handle_transfer_balance,
 }
 
 def onConnectHandler(client: mqtt.Client, userdata, flags, rc):
     client.subscribe('+/+/bankit/account-identity/request')
     client.subscribe('+/+/bankit/wallet-identity/request')
+    client.subscribe('bankit/balance-transfer/request')
 
 def onMessageHandler(client: mqtt.Client, userdata, message: mqtt.MQTTMessage):
     topic_parts = message.topic.split('/')
