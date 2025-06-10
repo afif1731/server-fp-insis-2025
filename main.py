@@ -25,11 +25,13 @@ def async_callback_wrapper(coro_func):
 TOPIC_HANDLERS = {
     'bankit/account-identity/request': async_callback_wrapper(getAccountController.getAccountController),
     'bankit/wallet-identity/request': async_callback_wrapper(getAccountController.getWalletController),
+    'bankit/wallet-history/request': async_callback_wrapper(getAccountController.getWalletHistoryController),
 }
 
 def onConnectHandler(client: mqtt.Client, userdata, flags, rc):
     client.subscribe('+/+/bankit/account-identity/request')
     client.subscribe('+/+/bankit/wallet-identity/request')
+    client.subscribe('+/+/bankit/wallet-history/request')
 
 def onMessageHandler(client: mqtt.Client, userdata, message: mqtt.MQTTMessage):
     topic_parts = message.topic.split('/')
