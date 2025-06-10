@@ -14,22 +14,22 @@ npm install prisma -g
 
 ### Run Docker for Database
 ```
-docker compose up -d
+docker-compose up -d
 ```
 
 ### Migrate Database
 ```
-uv run python -m prisma migrate dev --schema ./prisma/schema.prisma
+uv run prisma migrate dev --schema ./prisma/schema.prisma
 ```
 
 ### Use Data Seeder
 ```
-python .\seeder.py
+uv run seeder.py
 ```
 
-### Run Server
+## Running
 ```
-python .\main.py
+uv run main.py
 ```
 
 ## Penjelasan Direktori
