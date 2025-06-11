@@ -2,6 +2,7 @@ import paho.mqtt.client as mqtt
 import asyncio
 
 import src.controller.get_account_controller as getAccountController
+import src.controller.shopit_controller as productController
 from src.config.mqtt_config import connect_mqtt, MQTT_URL
 from src.config.prisma_config import prisma
 from src.controller.transfer_controller import handle_transfer_balance
@@ -26,12 +27,18 @@ def async_callback_wrapper(coro_func):
 TOPIC_HANDLERS = {
     'bankit/account-identity/request': async_callback_wrapper(getAccountController.getAccountController),
     'bankit/wallet-identity/request': async_callback_wrapper(getAccountController.getWalletController),
+    'bankit/wallet-history/request': async_callback_wrapper(getAccountController.getWalletHistoryController),
+    'shopit/product-catalog/request': async_callback_wrapper(productController.getProductCatalogController),
+    'shopit/product-detail/request': async_callback_wrapper(productController.getProductByIdController),
     'bankit/balance-transfer/request': handle_transfer_balance,
 }
 
 def onConnectHandler(client: mqtt.Client, userdata, flags, rc):
     client.subscribe('+/+/bankit/account-identity/request')
     client.subscribe('+/+/bankit/wallet-identity/request')
+    client.subscribe('+/+/bankit/wallet-history/request')
+    client.subscribe('+/+/shopit/product-catalog/request')
+    client.subscribe('+/+/shopit/product-detail/request')
     client.subscribe('bankit/balance-transfer/request')
 
 def onMessageHandler(client: mqtt.Client, userdata, message: mqtt.MQTTMessage):

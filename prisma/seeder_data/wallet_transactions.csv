@@ -1,0 +1,11 @@
+id,transaction_type,description,balance_change,user_wallet_id
+txn001,TRANSFER,Transfer masuk dari Budi,50000,2849c3df-8d7d-4913-8893-4e4b7063c0c5
+txn002,PURCHASE,Pembelian di Toko ABC,-25000,2849c3df-8d7d-4913-8893-4e4b7063c0c5
+txn003,TRANSFER,Transfer keluar ke Ani,-30000,2849c3df-8d7d-4913-8893-4e4b7063c0c5
+txn004,PURCHASE,Beli pulsa 20K,-20000,2849c3df-8d7d-4913-8893-4e4b7063c0c5
+txn005,TRANSFER,Transfer masuk dari Dana Hibah,100000,2849c3df-8d7d-4913-8893-4e4b7063c0c5
+txn006,TRANSFER,Transfer masuk dari Gaji,75000,e14b7e46-5ddc-40a9-bdb9-d085eebff21c
+txn007,PURCHASE,Pembelian makanan,-15000,e14b7e46-5ddc-40a9-bdb9-d085eebff21c
+txn008,AUCTION,Menang lelang barang,-45000,e14b7e46-5ddc-40a9-bdb9-d085eebff21c
+txn009,TRANSFER,Transfer keluar ke keluarga,-25000,e14b7e46-5ddc-40a9-bdb9-d085eebff21c
+txn010,PURCHASE,Beli tiket bus,-12000,b06c8f94-816f-4047-9c4f-8dea9acc8ab8

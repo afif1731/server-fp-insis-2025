@@ -1,40 +1,35 @@
 # BankIT
 
-## How To Run BankIT Server
+## Prerequisites
 
-### Create Python Environment (Recommended for Development)
-```
-py -3.9 -m venv .venv
-```
+- uv
+- npm
 
-### Activate Virtual environment (Windows)
-```
-.venv/Scripts/activate
-```
+### Installation
 
-### Install Requirements
-```
-pip install -r requirements.txt
+```bash
+uv sync
+npm install prisma -g
 ```
 
 ### Run Docker for Database
 ```
-docker compose up -d
+docker-compose up -d
 ```
 
 ### Migrate Database
 ```
-prisma migrate dev --schema ./prisma/schema.prisma
+uv run prisma migrate dev --schema ./prisma/schema.prisma
 ```
 
 ### Use Data Seeder
 ```
-python .\seeder.py
+uv run seeder.py
 ```
 
-### Run Server
+## Running
 ```
-python .\main.py
+uv run main.py
 ```
 
 ## Penjelasan Direktori
