@@ -87,3 +87,40 @@ async def transferBalanceService(sender_email: str, receiver_email: str, sender_
         'receiver_payment_method': receiver_wallet.payment_method.payment_name,
         'sender_payment_method': sender_wallet.payment_method.payment_name
     }
+
+async def askBalanceService(user_class: str, user_group: str, user_email: str, payment_method: str):
+    isUserExist = await prisma.accounts.find_first(
+        where={ 'email': user_email }
+    )
+
+    if isUserExist is None:
+        raise CustomError(404, 'user tidak ditemukan')
+    
+    if (isUserExist.role != 'USER') or (user_email != f'insys-{user_class}-{user_group}@bankit.com'):
+        print('email tidak sesuai')
+        raise CustomError(403, 'user tidak dapat mengakses data ini')
+    
+    userWallet = await prisma.userwallets.find_first(
+        where={'AND': [
+            {'account_id': isUserExist.id},
+            {'payment_method_slug': payment_method},
+        ]},
+        include={'payment_method': True}
+    )
+
+    if userWallet is None:
+        raise CustomError(404, 'E-Wallet user tidak ditemukan')
+    
+    updatedWallet = await prisma.userwallets.update(
+        where={'id': userWallet.id},
+        data={
+            'balance': userWallet.balance + 10000
+        }
+    )
+
+    return {
+        'username': isUserExist.name,
+        'payment_method': payment_method,
+        'user_wallet_id': userWallet.id,
+        'current_balance': updatedWallet.balance
+    }
