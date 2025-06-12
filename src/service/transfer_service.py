@@ -84,7 +84,9 @@ async def transferBalanceService(sender_email: str, receiver_email: str, sender_
             'receiver_email': receiver.email,
             'current_balance': updated_receiver_wallet.balance
         },
+        'receiver_name': receiver.name,
         'receiver_payment_method': receiver_wallet.payment_method.payment_name,
+        'sender_name': sender.name,
         'sender_payment_method': sender_wallet.payment_method.payment_name
     }
 
