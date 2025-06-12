@@ -5,6 +5,7 @@ import src.controller.get_account_controller as getAccountController
 import src.controller.shopit_controller as productController
 from src.config.mqtt_config import connect_mqtt, MQTT_URL
 from src.config.prisma_config import prisma
+from src.controller.transfer_controller import handle_transfer_balance
 
 LOOP = None  # Global event loop
 stop_event = asyncio.Event()
@@ -29,6 +30,7 @@ TOPIC_HANDLERS = {
     'bankit/wallet-history/request': async_callback_wrapper(getAccountController.getWalletHistoryController),
     'shopit/product-catalog/request': async_callback_wrapper(productController.getProductCatalogController),
     'shopit/product-detail/request': async_callback_wrapper(productController.getProductByIdController),
+    'bankit/+/transfer/send/request': async_callback_wrapper(handle_transfer_balance),
 }
 
 def onConnectHandler(client: mqtt.Client, userdata, flags, rc):
@@ -37,10 +39,13 @@ def onConnectHandler(client: mqtt.Client, userdata, flags, rc):
     client.subscribe('+/+/bankit/wallet-history/request')
     client.subscribe('+/+/shopit/product-catalog/request')
     client.subscribe('+/+/shopit/product-detail/request')
-    
+    client.subscribe('+/+/bankit/+/transfer/send/request')
 
 def onMessageHandler(client: mqtt.Client, userdata, message: mqtt.MQTTMessage):
     topic_parts = message.topic.split('/')
+    if len(topic_parts) > 4 and (topic_parts[4] == 'transfer' or topic_parts[4] == 'give-balance' or topic_parts[4] == 'live-history'):
+        topic_parts[3] = '+'
+    
     key = '/'.join(topic_parts[2:])
     handler = TOPIC_HANDLERS.get(key)
     if handler:
