@@ -24,8 +24,10 @@ services:
       - .env
     ports:
       - ${MQTT_PORT}:1883
+      - ${WS_PORT}:9001
     expose:
       - ${MQTT_PORT}
+      - ${WS_PORT}
     volumes:
       - ./mosquitto_config:/mosquitto/config:rw
       - ./docker/mosquitto/data:/mosquitto/data:rw
