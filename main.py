@@ -33,6 +33,7 @@ TOPIC_HANDLERS = {
 
     'shopit/product-catalog/request': async_callback_wrapper(productController.getProductCatalogController),
     'shopit/product-detail/request': async_callback_wrapper(productController.getProductByIdController),
+    'shopit/buy/request': async_callback_wrapper(productController.buyProductController),
 }
 
 def onConnectHandler(client: mqtt.Client, userdata, flags, rc):
@@ -44,6 +45,7 @@ def onConnectHandler(client: mqtt.Client, userdata, flags, rc):
     
     client.subscribe('+/+/shopit/product-catalog/request')
     client.subscribe('+/+/shopit/product-detail/request')
+    client.subscribe('+/+/shopit/buy/request')
 
 def onMessageHandler(client: mqtt.Client, userdata, message: mqtt.MQTTMessage):
     topic_parts = message.topic.split('/')
